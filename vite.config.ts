@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      base: '/smokers-hut/', // Set base path for GitHub Pages
       server: {
         port: 3000,
         host: '0.0.0.0',
